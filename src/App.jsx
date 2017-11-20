@@ -23,8 +23,8 @@ class App extends React.Component{
 
 
     nextId() {
-        this._nextId = this.nextId || 4;
-        return this._nextId++
+        this._nextId = this._nextId || 4;
+        return this._nextId++;
     }
 
     handleStatusChange(id) {
